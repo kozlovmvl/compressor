@@ -9,7 +9,6 @@ int main(int argc, char** argv){
 
 	CentralWidget ctrw;
 	mwin.setCentralWidget(&ctrw);
-	mwin.centralWidget = &ctrw;
 
 	mwin.show();
 	

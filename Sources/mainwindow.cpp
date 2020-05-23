@@ -15,10 +15,17 @@ QToolBar* MainWindow::createToolBar(){
 	return ptb;
 }
 
+
+void MainWindow::setCentralWidget(CentralWidget* pwt){
+	QMainWindow::setCentralWidget(pwt);
+	centralWidget = pwt;
+}
+
 void MainWindow::selectFile(){
 	QString fileName = QFileDialog::getOpenFileName(this, "Select", "", "*.txt");
 	if (fileName != ""){
-		centralWidget->selectedFile->setText(fileName);	
+		centralWidget->selectedFile->setText(fileName);
+		centralWidget->data.filename = fileName;
 	}
 }
 

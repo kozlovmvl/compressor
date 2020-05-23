@@ -12,6 +12,7 @@ public:
 	MainWindow();
 	QToolBar* createToolBar();
 	CentralWidget* centralWidget = 0;
+	void setCentralWidget(CentralWidget* pwt);
 
 public slots:
 	void selectFile();

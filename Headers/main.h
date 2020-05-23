@@ -8,4 +8,6 @@
 #include <QtWidgets/QFileDialog>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QMessageBox>
+#include <QtWidgets/QComboBox>
 #include <QtCore/QObject>
+#include <QtCore/QStringList>
